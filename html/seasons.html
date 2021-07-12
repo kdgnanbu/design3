@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <title>access</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/seasons.css">
+    <link rel="stylesheet" href="../css/slick.css" />
+    <!--    <link rel="shortcut icon" href="../../_common/images/favicon.ico">-->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+
+    <!--   メニュータブ-->
+    <script>
+        $(function() {
+            const hum = $('#hamburger, .close')
+            const nav = $('.sp-nav')
+            hum.on('click', function() {
+                nav.toggleClass('toggle');
+            });
+        });
+
+    </script>
+
+    <link rel="stylesheet" href="../css/animate.css">
+    <script src="../js/jquery.textillate.js"></script>
+    <script src="../js/jquery.lettering.js"></script>
+    <script src="../js/slick.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="pc-nav">
+            <ul>
+                <li><a href="../php/top.php">top</a></li>
+                <li><a href="../html/information.html">利用方法</a></li>
+                <li><a href="../html/seasons.html">四季の楽しみ方</a></li>
+                <li><a href="../html/access.html">アクセス</a></li>
+                <li><a href="../html/contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <nav class="sp-nav">
+            <ul>
+                <li><a href="../php/top.php"><a1>top</a1></a></li>
+                <li><a href="../html/information.html"><a1>利用方法</a1></a></li>
+                <li><a href="../html/seasons.html"><a1>四季の楽しみ方</a1></a></li>
+                <li><a href="../html/access.html"><a1>アクセス</a1></a></li>
+                <li><a href="../html/contact.html"><a1>お問い合わせ</a1></a></li>
+                <li class="close"><span>閉じる</span></li>
+            </ul>
+        </nav>
+        <div id="hamburger">
+            <span></span>
+        </div>
+    </header>
+
+    <div class="top">
+        <div class="title">
+            <p>四季の楽しみ方</p>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $(".season_size").on("inview", function(event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                }
+            });
+        });
+
+    </script>
+
+    <div class="season_all">
+
+
+        <div class="box1">
+
+            <div class="season_size">
+
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="col-md-6 order-md-2">
+                            <!--全体の枠-->
+                            <div class="wappar1">
+                                <div id="cover">
+
+                                    <!--メイン画像-->
+                                    <div id="main_frame">
+                                        <img src="../img/spring1.jpg" id="bigimg">
+                                    </div>
+                                    <!--/#main_frame-->
+                                    <ul id="thumbnalespace">
+                                        <li><img class="thumb" src="../img/spring1.jpg" data-image="../img/spring1.jpg"></li>
+                                        <li><img class="thumb" src="../img/spring2.jpg" data-image="../img/spring2.jpg"></li>
+                                        <li><img class="thumb" src="../img/spring3.jpg" data-image="../img/spring3.jpg"></li>
+                                        <li><img class="thumb" src="../img/spring4.jpg" data-image="../img/spring4.jpg"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 order-md-1">
+
+
+                                    <div class="icon1"></div>
+
+
+
+
+
+                            <div class="box">
+                                <p>&nbsp;&nbsp;円山公園は古くからの桜の名所であり、春になると約160本の桜の木が満開になりとても美しい風景となります。<br>
+                                &nbsp;&nbsp;お花見期間にはバーベキューができるエリアを設けているため桜を見ながら楽しめることができます。
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var thumbs = document.querySelectorAll('.thumb');
+                    for (var i = 0; i < thumbs.length; i++) {
+                        thumbs[i].onclick = function() {
+                            document.getElementById('bigimg').src = this.dataset.image;
+                        };
+                    }
+
+                </script>
+            </div>
+        </div>
+
+
+
+        <div class="box5">
+
+            <div class="season_size fadeIn_right">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="wappar1">
+                                <div id="cover">
+                                    <!--メイン画像-->
+                                    <div id="main_frame">
+                                        <img src="../img/samar1.jpg" id="bigimg1">
+                                    </div>
+                                    <!--/#main_frame-->
+                                    <ul id="thumbnalespace">
+                                        <li><img class="thumb1" src="../img/samar1.jpg" data-image="../img/samar1.jpg"></li>
+                                        <li><img class="thumb1" src="../img/samar2.jpg" data-image="../img/samar2.jpg"></li>
+                                        <li><img class="thumb1" src="../img/samar3.jpg" data-image="../img/samar3.jpg"></li>
+                                        <li><img class="thumb1" src="../img/samar4.jpg" data-image="../img/samar4.jpg"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+
+<!--
+                               <div class="parallax">
+                                <div class="scroll">
+-->
+                                    <div class="icon2"></div>
+<!--
+                                </div>
+                            </div>
+-->
+
+                            <div class="box">
+                                <p>&nbsp;&nbsp;夏には様々なイベントがあり、夏祭り、青空ヨガ、探索ツアーなど小さなお子様から、御年配の方まで楽しめます。<br>
+                                &nbsp;&nbsp;また、円山公園には様々な動物が生息しており、自然と触れ合うことができます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var thumbs = document.querySelectorAll('.thumb1');
+                    for (var i = 0; i < thumbs.length; i++) {
+                        thumbs[i].onclick = function() {
+                            document.getElementById('bigimg1').src = this.dataset.image;
+                        };
+                    }
+
+                </script>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="season_size fadeIn_left">
+                <!--
+              <script>
+              $(function(){
+  $(".inview").on("inview", function (event, isInView) {
+    if (isInView) {
+      $(this).stop().addClass("is-show");
+    }
+  });
+});
+                </script>
+-->
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6  order-md-2">
+                            <div class="wappar1">
+                                <div id="cover">
+                                    <!--メイン画像-->
+                                    <div id="main_frame">
+                                        <img src="../img/autumn1.jpg" id="bigimg2">
+                                    </div>
+                                    <!--/#main_frame-->
+                                    <ul id="thumbnalespace">
+                                        <li><img class="thumb2" src="../img/autumn1.jpg" data-image="../img/autumn1.jpg"></li>
+                                        <li><img class="thumb2" src="../img/autumn2.jpg" data-image="../img/autumn2.jpg"></li>
+                                        <li><img class="thumb2" src="../img/autumn3.jpg" data-image="../img/autumn3.jpg"></li>
+                                        <li><img class="thumb2" src="../img/autumn4.jpg" data-image="../img/autumn4.jpg"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6  order-md-1">
+<!--
+                            <div class="parallax">
+                                <div class="scroll">
+-->
+                                    <div class="icon3"></div>
+<!--
+                                </div>
+                            </div>
+-->
+                            <div class="box">
+                                <p>&nbsp;&nbsp;秋になり、真っ赤に染まる円山公園。
+                            紅葉名所に数えられるほど美しい紅葉が見られます。<br>
+                            &nbsp;&nbsp;紅葉を見下ろしたいなら、園内に登山口がある円山登山がおすすめ。子どもでも20～30分程度で登頂でき、円山の紅葉と札幌の町並みを一望できます。
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var thumbs = document.querySelectorAll('.thumb2');
+                    for (var i = 0; i < thumbs.length; i++) {
+                        thumbs[i].onclick = function() {
+                            document.getElementById('bigimg2').src = this.dataset.image;
+                        };
+                    }
+
+                </script>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="season_size fadeIn_right">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="wappar1">
+                                <div id="cover">
+                                    <!--メイン画像-->
+                                    <div id="main_frame">
+                                        <img src="../img/winter1.jpg" id="bigimg3">
+                                    </div>
+                                    <!--/#main_frame-->
+                                    <ul id="thumbnalespace">
+                                        <li><img class="thumb3" src="../img/winter1.jpg" data-image="../img/winter1.jpg"></li>
+                                        <li><img class="thumb3" src="../img/winter2.jpg" data-image="../img/winter2.jpg"></li>
+                                        <li><img class="thumb3" src="../img/winter3.jpg" data-image="../img/winter3.jpg"></li>
+                                        <li><img class="thumb3" src="../img/winter4.jpg" data-image="../img/winter4.jpg"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+<!--
+                            <div class="parallax">
+                                <div class="scroll">
+-->
+                                    <div class="icon4"></div>
+<!--
+                                </div>
+                            </div>
+-->
+                            <div class="box">
+                                <p>&nbsp;&nbsp;冬になると、一面雪で覆われ真っ白な美しい空間となります。<br>
+                                2月にはスノーマウンテンという大きなイベントがあり、毎年賑わっています。<br>
+                                &nbsp;&nbsp;当園ではチューブそりの無料貸し出しも行っているため準備がなくてもご利用いただけます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var thumbs = document.querySelectorAll('.thumb3');
+                for (var i = 0; i < thumbs.length; i++) {
+                    thumbs[i].onclick = function() {
+                        document.getElementById('bigimg3').src = this.dataset.image;
+                    };
+                }
+
+            </script>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer">
+            <p>〒064-0959 札幌市中央区宮ヶ丘他<br>
+                円山公園管理事務所<br>
+                電話番号(011)621-0453<br>
+                FAX(011)621-0515</p>
+
+            <!--        <a href="../html/sitemap.html">サイトマップ</a>-->
+
+
+
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

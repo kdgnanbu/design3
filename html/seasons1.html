@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <meta name="robots" content="noindex,nofollow">
+   <title>access</title>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/seasons.css">
+    <link rel="stylesheet" href="../css/slick.css"/>
+<!--    <link rel="shortcut icon" href="../../_common/images/favicon.ico">-->
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+<!--ポップアップ-->
+
+<!--   メニュータブ-->
+   <script>
+   $(function() {
+      const hum = $('#hamburger, .close')
+      const nav = $('.sp-nav')
+      hum.on('click', function(){
+         nav.toggleClass('toggle');
+      });
+   });
+   </script>
+
+    <link rel="stylesheet" href="../css/animate.css">
+<!--    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="../js/jquery.textillate.js"></script>
+    <script src="../js/jquery.lettering.js"></script>
+    <script src="../js/slick.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+   <header>
+      <nav class="pc-nav">
+         <ul>
+            <li><a href="../html/top.html">top</a></li>
+            <li><a href="../html/information.html">利用方法</a></li>
+            <li><a href="../html/seasons.html">四季の楽しみ方</a></li>
+            <li><a href="../html/access.html">アクセス</a></li>
+            <li><a href="../html/contact.html">お問い合わせ</a></li>
+         </ul>
+      </nav>
+      <nav class="sp-nav">
+         <ul>
+            <li><a href="../html/top.html"><a1>top</a1></a></li>
+            <li><a href="../html/information.html"><a1>利用方法</a1></a></li>
+            <li><a href="../html/seasons.html"><a1>四季の楽しみ方</a1></a></li>
+            <li><a href="../html/access.html"><a1>アクセス</a1></a></li>
+            <li><a href="../html/contact.html"><a1>お問い合わせ</a1></a></li>
+            <li class="closes"><span>閉じる</span></li>
+         </ul>
+      </nav>
+      <div id="hamburger">
+         <span></span>
+      </div>
+   </header>
+   <div class="top">
+          <div class="title">
+          <p>四季の楽しみ方</p>
+          </div>
+    </div>
+<!--
+<script>
+$(function(){
+  $(".season_size").on("inview", function (event, isInView) {
+    if (isInView) {
+      $(this).stop().addClass("is-show");
+    }
+//      else {
+//      $(this).stop().removeClass("is-show");
+//    }
+  });
+}); </script>
+-->
+
+<div class="season_all">
+    <div class="season_size">
+    <div class="container1">
+    <div class="row">
+        <div class="col-sm-6">
+<!--
+ <script>
+//            $(function() {
+//    var top = $('#box1').offset().top; //初期値を取得
+//    $(window).scroll(function() {
+//        var value = $(this).scrollTop(); //スクロールの値を取得
+//        $('#scrollValue').text(value);
+//
+//        $('#box1').css('top', top + value / 2);
+//        $('#box2').css('top', top + value / 4);
+//        $('#box3').css('top', top + value / 6);
+//        $('#box4').css('top', top + value / 8);
+//    });
+//});
+     
+//惜しい
+     $(function() {
+    var top = $('#box1').offset().top; //初期値を取得
+    $(window).scroll(function() {
+        var value = $(this).scrollTop(); //スクロールの値を取得
+        $('#scrollValue').text(value);
+
+        $('#box1').css('top', top + value / 2);
+        $('#box2').css('top', top + value / 4);
+         $('#box3').css('top', top + value / 2);
+        $('#box4').css('top', top + value / 4);
+         if (value >= 300) { //スクロール距離がendの位置を超えたら
+ $('#box1').fadeOut(); //フェードアウト
+ $('#box2').fadeOut(); //フェードアウト
+ }
+        else{
+ $('#box1').fadeIn(); //endより上部に戻ったらフェードイン
+$('#box2').fadeIn(); //endより上部に戻ったらフェードイン
+ }
+          if (value >= 1100) { //スクロール距離がendの位置を超えたら
+ $('#box3').fadeOut(); //フェードアウト
+ $('#box4').fadeOut(); //フェードアウト
+ }
+        else{
+ $('#box3').fadeIn(); //endより上部に戻ったらフェードイン
+$('#box4').fadeIn(); //endより上部に戻ったらフェードイン
+ }
+    });
+});
+
+            </script>
+-->
+<!--              <p class="num">スクロールの値 | <span id="scrollValue">0</span></p>-->
+            
+            
+ <!--全体の枠-->
+<!--<div id="cover">-->
+
+<!--メイン画像-->
+<!--
+<div class="main-frame">
+<img id="main-img" src="../img/03n.svg">
+-->
+<!--</div>-->
+
+
+<!--サムネイル部分-->
+<!--
+<ul class="thumbspace">
+<li>
+<img class="thumbnails" src="../img/01d.svg" data-imagesrc="メイン画像のパス" >
+</li>
+<li>
+<img class="thumbnails" src="../img/01n.svg" data-imagesrc="サムネ画像2のパス" >
+</li>
+<li>
+<img class="thumbnails" src="../img/02d.svg" data-imagesrc="サムネ画像3のパス" >
+</li>
+<li>
+<img class="thumbnails" src="../img/02n.svg" data-imagesrc="サムネ画像4のパス" >
+</li>
+</ul>
+
+</div>           
+-->
+<!--
+            <script>
+            
+            var thumbs =document.querySelectorAll('.thumbnails');
+for (var i =0 ; i < thumbs.length; i++ ) {
+  thumbs[i].onclick = function() {
+  document.getElementById('main-img').src = this.dataset.imagesrc;
+  };
+}
+            </script>
+-->
+            
+            
+            
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+      <p>テキスト</p>
+        </div>
+        <div class="col-sm-6">
+      <p>画像</p>
+</div>
+    </div>
+</div>
+</div>
+
+<div class="season_size fadeIn_right">
+    <div class="container2">
+    <div class="row">
+        <div class="col-sm-6">
+<!--          <p class="num">スクロールの値 | <span id="scrollValue">0</span></p>-->
+    <div id="box3" class="box2"></div>
+    <div id="box4" class="box2"></div>
+
+
+
+       <p>テキスト</p>
+        </div>
+        <div class="col-sm-6">
+     <p>画像</p>
+</div>
+    </div>
+</div>
+</div>
+
+<div class="season_size fadeIn_right">
+    <div class="container3">
+    <div class="row">
+        <div class="col-sm-6">
+       テキスト
+        </div>
+        <div class="col-sm-6">
+      画像
+</div>
+    </div>
+</div>
+</div>
+
+<div class="season_size fadeIn_right">
+    <div class="container4">
+    <div class="row">
+        <div class="col-sm-6">
+       テキスト
+        </div>
+        <div class="col-sm-6">
+      画像
+</div>
+    </div>
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<footer>
+   <div class="footer">
+          <p>〒064-0959 札幌市中央区宮ヶ丘他<br>
+    円山公園管理事務所<br>
+    電話番号(011)621-0453<br>
+    FAX(011)621-0515</p>
+
+<!--        <a href="../html/sitemap.html">サイトマップ</a>-->
+
+
+
+
+   </div>
+
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
