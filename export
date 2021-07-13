@@ -1,0 +1,63 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.7
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost
+-- Generation Time: 2021 年 1 月 22 日 03:08
+-- サーバのバージョン： 5.6.38
+-- PHP Version: 7.2.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `park`
+--
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `news`
+--
+
+CREATE TABLE `news` (
+  `no` int(13) NOT NULL,
+  `time` date NOT NULL,
+  `news_cd` varchar(1) NOT NULL,
+  `details` text NOT NULL,
+  `text` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- テーブルのデータのダンプ `news`
+--
+
+INSERT INTO `news` (`no`, `time`, `news_cd`, `details`, `text`) VALUES
+(1, '2021-01-10', '0', 'お知らせ', '円山公園のお知らせです。\r\n新型コロナウイルス拡大防止のため入場時間が10時からになります。\r\nマスクの着用、咳エチケットなど、徹底をお願いします。'),
+(2, '2020-12-01', '1', '12月のイベント情報', '12/4　円山公園雪まつり\r\n12/6 　ライトアップ\r\n12/25　クリスマスイベント\r\n12/31　年越イベント'),
+(3, '2021-01-20', '0', '新型コロナウイルス拡大防止について', '新型コロナウイルス拡大防止のため当園では、三密防止のためトイレの換気、時短営業を行っています。ご利用の皆様もマスクの着用、咳エチケットなどのご配慮をよろしくお願いします。'),
+(4, '2021-01-01', '1', '１月のイベント情報', '1/2　地域新年会\r\n1/15 子供まつり'),
+(5, '2021-02-11', '0', '円山雪まつり中止について', '新型コロナウイルス拡大を受け、円山雪まつりを中止とさせていただきます。'),
+(6, '2020-10-15', '0', '紅葉の季節がやってきました', '１１月中旬までが見どころです'),
+(7, '2021-01-20', '1', '円山公園改装について', '円山公園の改装を行います。\r\n期間は10月~1月中旬です。\r\nご迷惑をおかけしますがよろしくお願いします。');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `news`
+--
+ALTER TABLE `news`
+  ADD PRIMARY KEY (`no`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `news`
+--
+ALTER TABLE `news`
+  MODIFY `no` int(13) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
